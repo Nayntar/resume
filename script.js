@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     data: {
       labels: [
         'HTML/CSS', 'C++', 'Бази даних', 'Arduino', 'Blender',
-        'Відповідальність', 'Командна робота', 'Швидке навчання', 'Англійська'
+        'Відповідальність', 'Командна робота', 'Швидке навчання', 'Англійська (B2)'
       ],
       datasets: [{
         label: 'Рівень володіння',
