@@ -249,30 +249,44 @@ footer {
 
 /* ========== Adaptive ========== */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    margin-left: 0;
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
   }
 
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    padding: 10px 20px;
+  .sidebar h1 {
+    font-size: 1.2em;
+    margin: 0;
   }
 
   .sidebar nav {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
   }
 
-  .content {
-    padding: 30px;
+  .theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scale(0.9);
   }
 
   .profile-photo {
-    display: none;
+    display: none; /* скрываем фото для экономии места */
+  }
+
+  .container {
+    margin-left: 0;
+    flex-direction: column;
+  }
+
+  .content {
+    padding: 20px;
   }
 }
